@@ -1,0 +1,31 @@
+package learn_java;
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+
+
+public class main {
+
+	public static void main(String[] agrs) {
+		//------------------------------------------
+		Scanner scanner = new Scanner(System.in);
+		//------------------------------------------
+		final int monthInYear = 12;
+		final int percent = 100;
+		System.out.print("Enter your Principal: ");
+		int principal = scanner.nextInt();
+		System.out.print("Enter your anual interest rate: ");
+		double anualInterestRate = scanner.nextDouble();
+		System.out.print("Enter your period (year): ");
+		int numberOfPayments = scanner.nextInt();
+		//------------------------------------------
+		numberOfPayments = numberOfPayments * monthInYear;
+		anualInterestRate = anualInterestRate / percent / monthInYear;
+		double mortage = principal * ( (anualInterestRate * Math.pow(anualInterestRate + 1, numberOfPayments)) / (Math.pow(anualInterestRate + 1, numberOfPayments) - 1) );
+		String mortageFormated = NumberFormat.getCurrencyInstance().format(mortage);
+		//------------------------------------------
+		System.out.println("Your Mortage: " + mortageFormated);
+		//------------------------------------------
+		scanner.close();
+	}	
+}
