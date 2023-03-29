@@ -1,0 +1,4 @@
+BAC001             |Nguyen Van A   |nam  |1990 |10000     |10   
+BAC002             |Nguyen Thi B   |nu   |1995 |11000     |11   
+BAC003             |Tran Tan P     |nam  |2000 |7000      |7    
+BAC004             |Tran Van C     |nam  |1992 |5000      |5    
