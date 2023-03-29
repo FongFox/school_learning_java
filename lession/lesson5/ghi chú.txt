@@ -1,0 +1,8 @@
+côgn thức của class
+
+class ..... {
+1. fields
+2. Constructors **
+3. get/set
+4. Methods
+}
